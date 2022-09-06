@@ -1,0 +1,83 @@
+Download and install composer in your machine
+Then install php7.3 or 7.4 in your machine
+
+Then run below command,
+composer create-project laravel/laravel palmer
+
+Then, cd palmer
+
+Then type, ls # It will show all the newly created laravel project files
+
+Then type, php artisan serve
+Starting Laravel development server: http://127.0.0.1:8000
+
+It will start the local laravel development server
+
+Then go to browser and type http://localhost:8000/
+
+It will show laravel startup page
+
+TO SETUP REGISTER & LOGIN SCREEN:
+USE PHP 7.4 & LARAVEL VERSION 9 FOR BETTER PERFORMANCE, LARAVEL 8 DOES NOT HAVE GOOD FEATURES FOR AUTOMATED CRUD OPERATIONS, which uses PHP 7.3
+
+https://www.youtube.com/watch?v=Ervti0O1wgo
+Create a Database
+
+composer require laravel/jetstream
+
+php artisan jetstream:install livewire
+
+run npm install && npm run dev
+
+php artisan migrate
+
+php artisan serve
+
+php artisan vendor:publish
+
+TO CREATE CRUD OPERATIONS:
+composer require laravel/breeze --dev
+
+php artisan breeze:install
+
+run npm install && npm run dev
+
+php artisan migrate
+
+php artisan serve
+
+composer require livewire/livewire
+
+Then add products table behind the screen
+
+Create route for products
+
+Create link in navigation page for products & crud generator
+
+Then open in browser, you will see products & crud generator link but when you clicked it, it will show nothing
+
+Then create product migration page and create Product Model as well 
+
+You can install the Package using Composer
+
+composer require ascsoftw/tall-crud-generator
+
+Go to this URL : /tall-crud-generator
+
+php artisan vendor:publish --provider="Ascsoftw\TallCrudGenerator\TallCrudGeneratorServiceProvider" --tag=config
+
+Then create or copy & paste Model of Brand, Category & Tag
+
+Then copy & paste Livewire folder under App\Http folder
+
+Then copy & paste livewire folder under /Users/sensarasharidilip/senthil/projects/laravelcrudgenerator/resources/views/ folder
+
+Then run npm install & npm run dev
+
+Then run npm run build to apply tailwind CSS to the application
+
+After you have installed the package, you can display the Config Page by including the Livewire Component in any View.
+
+@livewire('tall-crud-generator')
+
+This way you can display the Config Page using your Application Layout and can also control the Users who have access to the Page.
